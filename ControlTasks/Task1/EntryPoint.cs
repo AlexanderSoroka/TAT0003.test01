@@ -11,13 +11,20 @@ namespace Task1
     {
         static void Main(string[] args)
         {
-            if(Directory.Exists(args[0]))
+            try
             {
-                Console.WriteLine("It is valid path");
+                if (Directory.Exists(args[0]))
+                {
+                    Console.WriteLine("It is valid path");
+                }
+                else
+                {
+                    Console.WriteLine("It is non-valid path");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                Console.WriteLine("It is non-valid path");
+                Console.WriteLine(ex.Message);
             }
         }
     }
