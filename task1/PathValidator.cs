@@ -10,18 +10,19 @@ namespace Task1
   {
     public bool IsDiskNameCorrect {get; set; }
     public bool IsPathValid { get; set; }
-    string[] pathPieces;
+    string[] pathParts;
     public PathValidator(string path)
     {
-      pathPieces = path.Split('\\');
+      pathParts = path.Split('\\');
       IsDiskNameCorrect = DiskNameChecker(path);
-      IsPathValid = PathValidateChecker(pathPieces);
+      IsPathValid = PathValidateChecker(pathParts);
     }
-
+    // This method checks if the name of disk is valid.
     private bool DiskNameChecker(string path)
     {
-      return (pathPieces[0][pathPieces[0].Length - 1] == ':');
+      return (pathParts[0][pathParts[0].Length - 1] == ':');
     }
+    // This method checks if each part of path
     private bool PathValidateChecker(string[] pathPieces)
     {
       string notValidSymbols = "\\/:*?\"<>|";
