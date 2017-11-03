@@ -10,16 +10,16 @@ namespace RepeatingObjects
   {
     string lineForSearch;
     List<string> ListToSearchIn;
-    int quantityOfReapitingObjects;
-    public int QuantityOfReapitingObjects
+    int quantityOfRepeatingObjects;
+    public int QuantityOfRepeatingObjects
     {
-      get => quantityOfReapitingObjects;
+      get => quantityOfRepeatingObjects;
     }
     public Searcher(string line, List<string> list)
     {
       lineForSearch = line;
       ListToSearchIn = list;
-      quantityOfReapitingObjects = 0;
+      quantityOfRepeatingObjects = 0;
     }
     public void CountReapitings ()
     {
@@ -27,7 +27,7 @@ namespace RepeatingObjects
       {
         if (line.Equals(lineForSearch))
         {
-          quantityOfReapitingObjects += 1;
+          quantityOfRepeatingObjects += 1;
         }
       }
     }

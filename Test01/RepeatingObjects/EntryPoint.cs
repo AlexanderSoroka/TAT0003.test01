@@ -37,8 +37,8 @@ namespace RepeatingObjects
         {
           Searcher searcher = new Searcher(str, listOfStrings);
           searcher.CountReapitings();
-          int quantityOfReapitings = searcher.QuantityOfReapitingObjects;
-          StringBuilder output = new StringBuilder("Line " + str + " repeats for " + quantityOfReapitings 
+          int quantityOfRepeatings = searcher.QuantityOfRepeatingObjects;
+          StringBuilder output = new StringBuilder("Line " + str + " repeats for " + quantityOfRepeatings 
                                                     + " times");
           Console.WriteLine(output);
           counted.Add(str);
