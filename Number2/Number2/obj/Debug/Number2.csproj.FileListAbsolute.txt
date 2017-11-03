@@ -1,0 +1,6 @@
+c:\users\imarket.by\documents\visual studio 2017\Projects\Number2\Number2\bin\Debug\Number2.exe.config
+c:\users\imarket.by\documents\visual studio 2017\Projects\Number2\Number2\bin\Debug\Number2.exe
+c:\users\imarket.by\documents\visual studio 2017\Projects\Number2\Number2\bin\Debug\Number2.pdb
+c:\users\imarket.by\documents\visual studio 2017\Projects\Number2\Number2\obj\Debug\Number2.csprojResolveAssemblyReference.cache
+c:\users\imarket.by\documents\visual studio 2017\Projects\Number2\Number2\obj\Debug\Number2.exe
+c:\users\imarket.by\documents\visual studio 2017\Projects\Number2\Number2\obj\Debug\Number2.pdb
