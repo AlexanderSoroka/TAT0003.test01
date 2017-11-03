@@ -13,6 +13,6 @@ public class PathValidator {
     boolean starts = path.startsWith(":", 2);
     boolean firstSlash = path.startsWith("\\", 3);
     boolean slashes = path.contains("\\");
-    return (((starts && firstSlash) && slashes) || slashes);
+    return ((starts && firstSlash) || slashes);
   }
 }
