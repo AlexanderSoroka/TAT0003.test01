@@ -17,7 +17,7 @@ namespace Task2
 
       foreach (var item in collection)
       {
-        var count = 0;
+        int count = 0;
         resultDictionary.TryGetValue(item, out count);
         resultDictionary[item] = count + 1;
       }
