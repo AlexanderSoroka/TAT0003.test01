@@ -8,6 +8,10 @@ namespace Task_2
 {
   class Program
   {
+    /// <summary>
+    /// Entry Point.
+    /// </summary>
+    /// <param name="args"></param>
     static void Main(string[] args)
     {
       ReapetedElements reapetedElements = new ReapetedElements();

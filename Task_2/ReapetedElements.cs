@@ -6,8 +6,16 @@ using System.Collections;
 
 namespace Task_2
 {
+  /// <summary>
+  /// Counts reapeted elements in collection.
+  /// </summary>
   class ReapetedElements
   {
+    /// <summary>
+    /// Returns reapeted elements in collection
+    /// </summary>
+    /// <param name="list">Collection.</param>
+    /// <returns>Count of reapeted elements.</returns>
     public int GetReapetedElements(ArrayList list)
     {
       int count = 0;
