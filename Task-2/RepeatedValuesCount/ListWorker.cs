@@ -44,21 +44,21 @@ namespace RepeatedValuesCount
     /// <returns> count of repeated values in collection </returns>
     public int CountRepeatedElements()
     {
-      int count = 0;
       ArrayList list = new ArrayList();
-      list.AddRange(ValuesList);
       for (int i = 0; i < ValuesList.Count; i++)
       {
         for (int j = i + 1; j < ValuesList.Count; j++)
         {
           if (ValuesList[i].Equals(ValuesList[j]))
           {
-            count++;
-            list.Remove(ValuesList[i]);
+            if (!list.Contains(ValuesList[i]))
+            {
+              list.Add(ValuesList[i]);
+            }
           }
         }
       }
-      return count;
+      return list.Count;
     }
   }
 }
