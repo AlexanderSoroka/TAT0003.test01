@@ -39,15 +39,19 @@ namespace CountOfEqualValues
     public int CounterOfValues()
     {
       StringBuilder resultLine = new StringBuilder();
-      int counter = 0;
+      ArrayList result = new ArrayList();
       for(int i = 0; i < CollcetionOfValues.Count; i++)
       {
         for(int j = i + 1; j < CollcetionOfValues.Count; j++)
         {
-          if (CollcetionOfValues[i].Equals(CollcetionOfValues[j]) || CollcetionOfValues[i] == CollcetionOfValues[j])
+          if (CollcetionOfValues[i].Equals(CollcetionOfValues[j]))
           {
-            CollcetionOfValues.Remove(CollcetionOfValues[i]);
-            counter++;
+            if (!(result.Contains(CollcetionOfValues[i])))
+            {
+              result.Add(CollcetionOfValues[i]);
+            }
+ 
+     
           }
         }
       }
@@ -55,7 +59,7 @@ namespace CountOfEqualValues
       {
         resultLine.Append(value);
       }
-      return counter;
+      return result.Count;
     }
   }
 }
