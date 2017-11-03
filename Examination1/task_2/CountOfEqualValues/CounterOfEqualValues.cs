@@ -7,12 +7,19 @@ using System.IO;
 
 namespace CountOfEqualValues
 {
+  /// <summary>
+  /// This class counts the number of equal elements on collection.
+  /// </summary>
   class CounterOfEqualValues
   {
     private ArrayList collcetionOfValues;
     public ArrayList CollcetionOfValues
     { get; set; }
 
+    /// <summary>
+    /// This method reads elements of collection from file
+    /// </summary>
+    /// <param name="currentLine">current line of reading file</param>
     public void ReadFile(string currentLine)
     {
       CollcetionOfValues = new ArrayList();
@@ -25,6 +32,10 @@ namespace CountOfEqualValues
       }
     }
 
+    /// <summary>
+    /// This method counts the equal elements of collection
+    /// </summary>
+    /// <returns>quantity of equal elements</returns>
     public int CounterOfValues()
     {
       StringBuilder resultLine = new StringBuilder();

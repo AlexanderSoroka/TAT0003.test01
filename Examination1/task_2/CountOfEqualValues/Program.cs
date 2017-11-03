@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace CountOfEqualValues
 {
+  /// <summary>
+  /// The entry point of programm
+  /// </summary>
   class Program
   {
     const string StringValues = @"e:\StringValues.txt";
